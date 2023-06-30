@@ -3,9 +3,9 @@
 // Cоздать функцию greeting, которая принимает в качестве аргумента имя человека и выводит приветствие, используя переданное ей имя, в консоль.
 // Необходимо у пользователя запросить имя и вызвать функцию greeting, передав туда полученное от пользователя значение.
 
-function greeting(usernamе) {
-    console.log(`Привет, ${usernamе}!`)
+function greeting(user) {
+    console.log(`Привет, ${user}!`)
 }
 
-name = prompt("Как тебя зовут?")
-greeting(name)
+const usernamе = prompt("Как тебя зовут?")
+greeting(usernamе)
