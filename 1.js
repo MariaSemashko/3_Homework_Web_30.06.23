@@ -10,10 +10,9 @@
 // Примечания: Пользователь всегда вводит корректное число.
 // Советую округлить значение после расчетов, так как в некоторых случаях может получиться "длинная дробь".
 
-function getTemperature(tC) {
-    const tF = +((9/5) * tC +32).toFixed(1) 
-    return tF
+function getFarenheit(celsuis) {
+    return((9 / 5) * celsuis + 32);
 }
 
-const temp = +prompt("Введите температуру в градусах Цельсия: ")
-alert(`Температура в градусах Цельсия: ${temp} \nТемпература в градусах Фаренгейта : ${getTemperature(temp)}`)
+const temperature = +prompt("Введите температуру в градусах Цельсия: ");
+alert(`Температура в градусах Цельсия: ${temperature} \nТемпература в градусах Фаренгейта : ${+getFarenheit(temperature).toFixed(1)}`);
